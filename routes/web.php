@@ -28,3 +28,7 @@ Route::get('/latest', 'PostController@index');
 Route::get('/policy', function() {
 	return view('public.policy');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
