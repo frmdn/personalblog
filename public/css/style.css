@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+* {
+	font-family: 'Crimson Text', serif;
+}
+
+.bg-light {
+    background-color: rgba(255,255,255,.7) !important;
+    transition: all 0.4s ease;
+}
+.bg-light.shrink {
+    background-color: rgba(255,255,255,1) !important;
+    transition: all 0.4s ease;
+}
+.navbar-brand {
+	font-family: 'Crimson Text', serif;
+	font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: .8em 1.5em;
+}
+
+.nav-link {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.navbar-custom {
+		padding: 20px 0;
+		-webkit-transition: padding 0.3s;
+		-moz-transition: padding 0.3s;
+		transition: padding 0.3s;
+	}
+	.navbar-custom .navbar-brand {
+		font-size: 1.5em;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.navbar-custom.shrink {
+		padding: 5px 0;
+		box-shadow: 0 8px 6px -6px #999;
+	}
+}
+
+.links-home {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.links-home li {
+	padding: 20px 0;
+	color: white;
+}
+
+.l1 {
+	background-color: #000;
+}
+.l2 {
+	background-color: #111;
+}
+.l3 {
+	background-color: #222;
+}
+.l4 {
+	background-color: #333;
+}
+
+.links-home li:hover > a, .links-home li:hover{
+	background-color: blue;
+	color: white;
+}
+
+.links-home li > a{
+	font-size: 1.5em;
+	font-weight: 500;
+	text-decoration: none;
+	color: white;
+}
+
+.links-home li > a:hover{
+	color: white;
+}
+
+.footer {
+	padding: 40px 0px;
+	border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.footer p, .footer a {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	line-height: .1em;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #333;
+}
+
+.footer a:hover {
+	color: #bbb;
+}
+.main {
+	position: relative;
+	margin-top: 150px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #0000ff;
+	border-bottom: 2px solid blue;
+}
+
+h1.header-center {
+	font-weight: 700;
+}
+
+.main p {
+	font-size: 1.2rem;
+}
+.index-article a {
+	text-decoration: none;
+	color: black;
+}
+
+.index-article a:hover {
+	color: #bbb;
+}
