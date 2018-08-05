@@ -27,6 +27,10 @@
 	font-weight: bold;
 }
 
+.main p {
+	font-size: 1.2rem;
+}
+
 @media (min-width: 768px) {
 	.navbar-custom {
 		padding: 20px 0;
@@ -43,6 +47,9 @@
 	.navbar-custom.shrink {
 		padding: 5px 0;
 		box-shadow: 0 8px 6px -6px #999;
+	}
+	.main p {
+		font-size: 1.5rem;
 	}
 }
 
@@ -119,9 +126,6 @@ h1.header-center {
 	font-weight: 700;
 }
 
-.main p {
-	font-size: 1.2rem;
-}
 .index-article a {
 	text-decoration: none;
 	color: black;

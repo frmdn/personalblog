@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var url = this.location.pathname;
-	var filename = url.substring(url.lastIndexOf('/')+1);
+	var filename = url.substring(url.lastIndexOf('/'));
 	$('a[href="' + filename + '"]').parent('li').addClass('active');
 });
 
