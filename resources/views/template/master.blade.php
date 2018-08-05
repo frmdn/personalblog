@@ -29,6 +29,9 @@
 						<a class="nav-link" href="contact">Contact</a>
 					</li>
 				</ul>
+				@if (Auth::check())
+				<a class="nav-link ml-auto" href="/logout">{{ Auth::user()->name }}</a>
+				@endif
 			</div>
 		</div>
 	</nav>
