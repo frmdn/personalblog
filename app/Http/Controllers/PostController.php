@@ -13,4 +13,22 @@ class PostController extends Controller
     	$data = Post::orderBy('created_at','desc')->get();
     	return view('public.latest',compact('data'));
     }
+
+    public function create()
+    {
+    	return view('post.create');
+    }
+
+    public function store()
+    {
+    	Post::create(request()->all());
+
+    	return redirect()->home();
+    }
+
+    public function show($id)
+    {
+    	$data = Post::find($id);
+    	return view('post.show', compact('data'));
+    }
 }

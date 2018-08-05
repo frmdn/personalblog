@@ -12,11 +12,15 @@ Route::get('/about', function () {
     return view('public.about');
 });
 
-Route::get('/latest', 'PostController@index');
+Route::get('/latest', 'PostController@index')->name('latest');
 
 Route::get('/policy', function() {
 	return view('public.policy');
 });
+
+Route::get('/posts','PostController@create');
+Route::get('/post/{id}','PostController@show');
+Route::post('/posts','PostController@store');
 
 Route::get('/login','SessionsController@create');
 Route::post('/login','SessionsController@store');
